@@ -5,14 +5,14 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/stormingrakesh45/react-scrutiny.git'
+                git branch: 'main', url: 'https://github.com/stormingrakesh45/react-scrutiny.git'
             }
         }
 
         stage('Install Dependencies') {
             steps {
                 sh '''
-                docker run --rm -v "%cd%":/app -w /app node:20 npm install
+                docker run --rm -v "$PWD":/app -w /app node:20 npm install
                 '''
             }
         }
@@ -20,7 +20,7 @@ pipeline {
         stage('Build React App') {
             steps {
                 sh '''
-                docker run --rm -v "%cd%":/app -w /app node:20 npm run build
+                docker run --rm -v "$PWD":/app -w /app node:20 npm run build
                 '''
             }
         }
