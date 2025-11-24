@@ -5,7 +5,7 @@ const Home = ()=> {
             <h1>
                 Home Page
             </h1>
-            <p>Welcome to our static React Site built with vite + Typescript</p>
+            <p>Storm In The City Bro</p>
         </div>
     );
 };
