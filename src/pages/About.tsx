@@ -1,15 +1,13 @@
-const About = () => {
+import "./Pages.css";
 
-    return (
-        <div>
-            <h1>
-                About Page
-            </h1>
-            <p>
-                This is a simple multi page React static website
-            </p>
-        </div>
-    );
-};
-
-export default About;
+export default function About() {
+  return (
+    <section className="page">
+      <h1>About Us</h1>
+      <p>
+        This website demonstrates a simple multi-page React static layout with
+        clean UI and routing.
+      </p>
+    </section>
+  );
+}

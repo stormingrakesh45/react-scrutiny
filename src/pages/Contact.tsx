@@ -1,20 +1,10 @@
-const Contact = () => {
+import "./Pages.css";
 
-    return (
-                <div>
-                    <h1>
-                        Contact Page
-                    </h1>
-                    <p>
-                        Email: rakesh@ajatus.co.in
-                    </p>
-                    </div>
-
-
-    )
-
-
-    
+export default function Contact() {
+  return (
+    <section className="page">
+      <h1>Contact Us</h1>
+      <p>Email: support@reactsite.com</p>
+    </section>
+  );
 }
-
-export default Contact;

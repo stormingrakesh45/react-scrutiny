@@ -1,13 +1,15 @@
-const Home = ()=> {
+import "./Pages.css";
+import Hero from "../components/Hero";
+// import WhyChooseUs from "../components/WhyChooseUs";
+// import { Button } from "@/components/ui/button";
 
-    return (
-        <div>
-            <h1>
-                Home Page
-            </h1>
-            <p>Storm In The City Bro</p>
-        </div>
-    );
+const Home = () => {
+  return (
+    <>
+      <Hero />
+      {/* <WhyChooseUs /> */}
+    </>
+  );
 };
 
 export default Home;
