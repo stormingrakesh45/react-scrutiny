@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage('Clone Repo'){
             steps{
-                git branch: 'main', url;"https://github.com/stormingrakesh45/react-scrutiny.git"
+                git branch: 'main', url:"https://github.com/stormingrakesh45/react-scrutiny.git"
             }
         }
 
